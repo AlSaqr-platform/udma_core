@@ -171,7 +171,7 @@ module udma_tx_channels
       case(s_fifo_l2_dest)
         2'b00:
         begin
-            l2_addr_o[31:24]  = 8'h1C;
+            l2_addr_o[31:24]  = s_fifo_l2_addr[31:24];
         end
         2'b01:
         begin

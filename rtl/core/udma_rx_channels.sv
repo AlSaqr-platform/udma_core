@@ -241,7 +241,7 @@ module udma_rx_channels
 
       case(s_l2_dest)
         2'b00:
-            l2_addr_o[31:24]  = 8'h1C;
+            l2_addr_o[31:24]  = s_l2_addr[31:24];
         2'b01:
             l2_addr_o[31:20]  = 12'h1A1;
         2'b10:
